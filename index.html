@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KD Jayakody | Web Developer & Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    .card {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="fixed w-full z-10 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">KD Jayakody</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a></li>
+        <li><a href="#skills" class="text-gray-300 hover:text-white transition duration-300">Skills</a></li>
+        <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg min-h-screen flex items-center justify-center text-center px-4">
+    <div>
+      <h2 class="text-5xl md:text-7xl font-extrabold mb-4">KD Jayakody</h2>
+      <p class="text-xl md:text-2xl mb-8">Web Developer | Designer | Innovator</p>
+      <a href="#about" class="px-8 py-3 bg-white text-gray-900 rounded-full font-semibold hover:bg-gray-200 transition duration-300">Discover My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center">About Me</h3>
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img src="image.png" alt="KD Jayakody" class="rounded-full w-64 h-64 mx-auto object-cover"/>
+        </div>
+        <div class="md:w-1/2">
+          <p class="text-gray-300 text-lg leading-relaxed">
+            I'm a creative and passionate web developer with a knack for crafting dynamic, user-friendly websites. My expertise spans both frontend and backend development, allowing me to deliver comprehensive solutions. I'm driven by the desire to innovate and push the boundaries of what's possible in web development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-12 text-center">My Skills</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="card p-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+          <h4 class="text-xl font-bold mb-4">Web Development</h4>
+          <ul class="text-gray-300">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Tailwind CSS</li>
+          </ul>
+        </div>
+        <div class="card p-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+          <h4 class="text-xl font-bold mb-4">Design</h4>
+          <ul class="text-gray-300">
+            <li>UI/UX Design</li>
+            <li>Adobe Creative Suite</li>
+            <li>Figma</li>
+            <li>Responsive Design</li>
+            <li>Color Theory</li>
+          </ul>
+        </div>
+        <div class="card p-6 rounded-lg transition-transform duration-300 transform hover:scale-105">
+          <h4 class="text-xl font-bold mb-4">Artificial Intelligence</h4>
+          <ul class="text-gray-300">
+            <li>Machine Learning</li>
+            <li>Natural Language Processing</li>
+            <li>Computer Vision</li>
+            <li>TensorFlow</li>
+            <li>PyTorch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-8 text-center">Get in Touch</h3>
+      <form class="max-w-lg mx-auto">
+        <div class="mb-4">
+          <input type="text" placeholder="Your Name" class="w-full px-4 py-2 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+        <div class="mb-4">
+          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500" />
+        </div>
+        <div class="mb-4">
+          <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+        </div>
+        <button type="submit" class="w-full px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md text-white font-semibold hover:from-purple-600 hover:to-pink-600 transition duration-300">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-center">
+    <p>&copy; 2024 KD Jayakody. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // GSAP animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from('nav', {
+      yPercent: -100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power3.out'
+    });
+
+    gsap.from('.card', {
+      scrollTrigger: {
+        trigger: '#skills',
+        start: 'top center'
+      },
+      y: 50,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      ease: 'power3.out'
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
